@@ -1,0 +1,447 @@
+[
+  {
+    "id": "camp-shelter-tent",
+    "tab": "camping",
+    "category": "Shelter and sleeping gear",
+    "name": "Tent (with stakes and guylines)"
+  },
+  {
+    "id": "camp-shelter-ground-tarp",
+    "tab": "camping",
+    "category": "Shelter and sleeping gear",
+    "name": "Ground tarp"
+  },
+  {
+    "id": "camp-shelter-canopy",
+    "tab": "camping",
+    "category": "Shelter and sleeping gear",
+    "name": "Canopy / tarp"
+  },
+  {
+    "id": "camp-shelter-table",
+    "tab": "camping",
+    "category": "Shelter and sleeping gear",
+    "name": "Camping table"
+  },
+  {
+    "id": "camp-shelter-chairs",
+    "tab": "camping",
+    "category": "Shelter and sleeping gear",
+    "name": "Camping chairs"
+  },
+  {
+    "id": "camp-shelter-sleeping-bags",
+    "tab": "camping",
+    "category": "Shelter and sleeping gear",
+    "name": "Sleeping bags"
+  },
+  {
+    "id": "camp-shelter-repair-kit",
+    "tab": "camping",
+    "category": "Shelter and sleeping gear",
+    "name": "Tent repair kit (sewing kit, extra fabric, duct tape)"
+  },
+  {
+    "id": "camp-cooking-stove",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Camp stove"
+  },
+  {
+    "id": "camp-cooking-grill",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Portable grill"
+  },
+  {
+    "id": "camp-cooking-fuel",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Fuel for stove or grill"
+  },
+  {
+    "id": "camp-cooking-lighter",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Lighter or matches in a waterproof container"
+  },
+  {
+    "id": "camp-cooking-cookware",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Cookware (pot, pan, kettle, tongs)"
+  },
+  {
+    "id": "camp-cooking-utensils",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Cooking utensils (spatula, ladle, tongs)"
+  },
+  {
+    "id": "camp-cooking-dish-soap",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Biodegradable dish soap and sponge"
+  },
+  {
+    "id": "camp-cooking-eating-utensils",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Eating utensils (plates, spoons)"
+  },
+  {
+    "id": "camp-cooking-bowls-glasses",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Disposable bowls and glasses"
+  },
+  {
+    "id": "camp-cooking-board-knife",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Cutting board and sharp knife"
+  },
+  {
+    "id": "camp-cooking-cooler",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Cooler and ice packs"
+  },
+  {
+    "id": "camp-cooking-fire-starter",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Fire starter"
+  },
+  {
+    "id": "camp-cooking-chopper",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Vegetable chopper"
+  },
+  {
+    "id": "camp-cooking-towels",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Tissues and kitchen towels"
+  },
+  {
+    "id": "camp-cooking-water-can",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Water can"
+  },
+  {
+    "id": "camp-cooking-beverages",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Beverages (Coke, coffee, tea, etc.)"
+  },
+  {
+    "id": "camp-cooking-butter",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Butter"
+  },
+  {
+    "id": "camp-cooking-metal-skewers",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Metal skewers"
+  },
+  {
+    "id": "camp-cooking-condiments",
+    "tab": "camping",
+    "category": "Cooking and food supplies",
+    "name": "Condiments and spices"
+  },
+  {
+    "id": "camp-clothing-underwear",
+    "tab": "camping",
+    "category": "Clothing",
+    "name": "Underwear and socks"
+  },
+  {
+    "id": "camp-clothing-quick-dry",
+    "tab": "camping",
+    "category": "Clothing",
+    "name": "Quick-dry pants / shorts and shirts"
+  },
+  {
+    "id": "camp-clothing-jacket",
+    "tab": "camping",
+    "category": "Clothing",
+    "name": "Fleece or insulated jacket"
+  },
+  {
+    "id": "camp-clothing-rain",
+    "tab": "camping",
+    "category": "Clothing",
+    "name": "Rain jacket and rain pants / umbrella"
+  },
+  {
+    "id": "camp-clothing-hat",
+    "tab": "camping",
+    "category": "Clothing",
+    "name": "Hat or cap"
+  },
+  {
+    "id": "camp-clothing-boots",
+    "tab": "camping",
+    "category": "Clothing",
+    "name": "Sturdy hiking boots or shoes"
+  },
+  {
+    "id": "camp-clothing-sandals",
+    "tab": "camping",
+    "category": "Clothing",
+    "name": "Sandals or camp shoes"
+  },
+  {
+    "id": "camp-clothing-swimsuit",
+    "tab": "camping",
+    "category": "Clothing",
+    "name": "Swimsuit and towel"
+  },
+  {
+    "id": "camp-personal-hygiene",
+    "tab": "camping",
+    "category": "Personal items",
+    "name": "Personal hygiene items"
+  },
+  {
+    "id": "camp-personal-medications",
+    "tab": "camping",
+    "category": "Personal items",
+    "name": "Prescription medications"
+  },
+  {
+    "id": "camp-personal-first-aid",
+    "tab": "camping",
+    "category": "Personal items",
+    "name": "First aid kit"
+  },
+  {
+    "id": "camp-personal-sunscreen",
+    "tab": "camping",
+    "category": "Personal items",
+    "name": "Sunscreen and insect repellent"
+  },
+  {
+    "id": "camp-personal-wipes",
+    "tab": "camping",
+    "category": "Personal items",
+    "name": "Wipes"
+  },
+  {
+    "id": "camp-personal-sunglasses",
+    "tab": "camping",
+    "category": "Personal items",
+    "name": "Sunglasses"
+  },
+  {
+    "id": "camp-personal-shampoo",
+    "tab": "camping",
+    "category": "Personal items",
+    "name": "Shampoo"
+  },
+  {
+    "id": "camp-personal-body-wash",
+    "tab": "camping",
+    "category": "Personal items",
+    "name": "Body wash"
+  },
+  {
+    "id": "camp-personal-face-wash",
+    "tab": "camping",
+    "category": "Personal items",
+    "name": "Face wash and moisturizer"
+  },
+  {
+    "id": "camp-personal-id",
+    "tab": "camping",
+    "category": "Personal items",
+    "name": "Personal identification and camping permit"
+  },
+  {
+    "id": "camp-misc-light",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Headlamp or flashlight with extra batteries"
+  },
+  {
+    "id": "camp-misc-table",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Portable table (if desired)"
+  },
+  {
+    "id": "camp-misc-multitool",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Multi-tool or knife"
+  },
+  {
+    "id": "camp-misc-rope",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Rope or paracord"
+  },
+  {
+    "id": "camp-misc-navigation",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Navigation tools (map, compass, GPS)"
+  },
+  {
+    "id": "camp-misc-trash-bags",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Trash bags"
+  },
+  {
+    "id": "camp-misc-entertainment",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Entertainment (books, cards, games)"
+  },
+  {
+    "id": "camp-misc-tripod",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Tripod stand"
+  },
+  {
+    "id": "camp-misc-tennis",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Tennis ball"
+  },
+  {
+    "id": "camp-misc-frisbee",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Frisbee"
+  },
+  {
+    "id": "camp-misc-cotton",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Cotton balls"
+  },
+  {
+    "id": "camp-misc-cricket",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Cricket bat"
+  },
+  {
+    "id": "camp-misc-firewood",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Campfire wood / compressed firewood",
+    "note": "Burner Log - Arvind"
+  },
+  {
+    "id": "camp-misc-site-light",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Camping site light (solar)"
+  },
+  {
+    "id": "camp-misc-foil",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Aluminium foil trays with lids"
+  },
+  {
+    "id": "camp-misc-dispenser",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Water dispenser"
+  },
+  {
+    "id": "camp-misc-bucket",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Bucket"
+  },
+  {
+    "id": "camp-misc-adapter",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "12V car adapter"
+  },
+  {
+    "id": "camp-misc-umbrella",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Umbrella"
+  },
+  {
+    "id": "camp-misc-strainer",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Strainer"
+  },
+  {
+    "id": "camp-misc-milk",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Milk (tetra pack with cap)"
+  },
+  {
+    "id": "camp-misc-mosquito-coil",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Mosquito coil"
+  },
+  {
+    "id": "camp-misc-table-cloth",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Picnic table cloth"
+  },
+  {
+    "id": "camp-misc-bed-sheet",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Bed sheet"
+  },
+  {
+    "id": "camp-misc-projector-sheet",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "White bed sheet for projector"
+  },
+  {
+    "id": "camp-misc-projector",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Projector"
+  },
+  {
+    "id": "camp-misc-racquet",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Mosquito racquet"
+  },
+  {
+    "id": "camp-misc-air-pump",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Air pump for mattress"
+  },
+  {
+    "id": "camp-misc-picnic-mats",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Picnic mats"
+  },
+  {
+    "id": "camp-misc-duster-fan",
+    "tab": "camping",
+    "category": "Miscellaneous",
+    "name": "Duster fan"
+  }
+]
