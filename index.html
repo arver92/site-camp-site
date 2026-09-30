@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="A practical, searchable camping checklist for the camping trips.">
+  <title>Algonquin provincial park - Checklist</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div class="hero-mark" aria-hidden="true">🏕️</div>
+      <div>
+        <p class="eyebrow">Algonquin Provincial Park · Sep 2026</p>
+        <h1>Camping checklist</h1>
+        <p class="hero-subtitle">Pack together, one item at a time.</p>
+      </div>
+    </header>
+
+    <section class="progress-panel" aria-label="Packing progress">
+      <div class="progress-copy"><strong id="progress-count">0 / 0 packed</strong><span id="progress-label">Camping supplies</span></div>
+      <div class="progress-track" aria-hidden="true"><div id="progress-bar" class="progress-bar"></div></div>
+    </section>
+
+    <nav class="tabs" aria-label="Checklist areas" role="tablist">
+      <button class="tab is-active" type="button" role="tab" aria-selected="true" aria-controls="checklist-panel" data-tab="camping">Camping supplies</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="checklist-panel" data-tab="meals">Meals</button>
+      <button class="tab" type="button" role="tab" aria-selected="false" aria-controls="checklist-panel" data-tab="everything">Everything else</button>
+    </nav>
+
+    <section class="controls" aria-label="Search and filters">
+      <label class="search-box" for="search-input"><span aria-hidden="true">⌕</span><span class="sr-only">Search the active tab</span><input id="search-input" type="search" placeholder="Search items..." autocomplete="off"></label>
+      <div class="filter-row">
+        <div class="filter-group" role="group" aria-label="Packing status">
+          <button class="filter-button is-active" type="button" data-status="all">All</button>
+          <button class="filter-button" type="button" data-status="remaining">Remaining</button>
+          <button class="filter-button" type="button" data-status="packed">Packed</button>
+        </div>
+        <label class="category-select"><span>Category</span><select id="category-filter"><option value="all">All categories</option></select></label>
+      </div>
+    </section>
+
+    <section id="add-item-panel" class="add-item-panel" aria-label="Add a checklist item">
+      <form id="add-item-form" class="add-item-form">
+        <label class="add-item-input" for="new-item-input"><span class="sr-only">New item</span><input id="new-item-input" type="text" maxlength="160" placeholder="Add a new item..." autocomplete="off"></label>
+        <label class="add-item-category" for="new-item-category"><span class="sr-only">Item category</span><select id="new-item-category"></select></label>
+        <button class="add-button" type="submit">Add item</button>
+      </form>
+    </section>
+
+    <section id="details-panel" class="details-panel" hidden aria-label="Everything else details">
+      <label for="details-input">Trip details</label>
+      <textarea id="details-input" rows="14" maxlength="10000" placeholder="Add reservations, contacts, reminders, directions, or any other trip details..."></textarea>
+      <p class="field-help">These notes are saved on this device.</p>
+    </section>
+
+    <section id="checklist-panel" class="checklist-grid" role="tabpanel" aria-live="polite" aria-label="Checklist items"></section>
+    <p id="empty-state" class="empty-state" hidden>No items match these filters.</p>
+
+    <footer class="app-footer"><button id="clear-packed" class="text-button" type="button">Clear packed items</button><span>Saved on this device</span></footer>
+  </main>
+  <script src="checklist.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
