@@ -49,7 +49,7 @@ The app should be hostable for free as a static site, with GitHub Pages as the p
 These choices follow the discussions and can be adjusted during requirements approval:
 
 - Store checklist records separately from rendering and interaction code, so routine item edits do not require changing the interface logic.
-- Use a data file such as `checklist.js` for item names, categories, quantities, and optional notes.
+- Use JSON data files in the `Data` folder: `camping_supplies.json`, `meals.json`, and `everything_else.json`.
 - Treat each browser/device as having its own packing progress. The same hosted list can be shared, but checked state is not synchronized between people or devices.
 - Use CSS Grid or Flexbox and fluid sizing rather than fixed page widths. Avoid horizontal scrolling on phone-sized screens.
 
@@ -59,8 +59,11 @@ These choices follow the discussions and can be adjusted during requirements app
 site-camp-site/
 ├── index.html          # Page structure and app entry point
 ├── styles.css          # Responsive visual design
-├── app.js              # Search, filters, checklist rendering, and saved state
-├── checklist.js        # Editable checklist content, separate from app behavior
+├── app.js              # JSON loading, search, filters, rendering, and saved state
+├── Data/
+│   ├── camping_supplies.json
+│   ├── meals.json
+│   └── everything_else.json
 ├── manifest.json       # Optional PWA metadata, if PWA is approved
 ├── service-worker.js   # Optional offline caching, if PWA/offline is approved
 └── icons/              # Optional installable-app icons
@@ -77,6 +80,7 @@ The structure is a proposal, not a requirement to create every listed file. Opti
 - Display only the selected tab's content at a time, while keeping tab navigation clear and usable on phones.
 - An item may include a quantity and, if useful, a short note.
 - Keep checklist content in a clearly identified, easy-to-edit data section/file.
+- Load the published checklist content from the JSON files in the `Data` folder.
 - Adding or changing an item should not require editing the search/filter implementation.
 - Provide a text box and add button in the Camping supplies and Meals tabs so users can add new checklist items on the page.
 - Save user-added checklist items locally on the current device and include them in the relevant tab's categories, filters, and progress count.

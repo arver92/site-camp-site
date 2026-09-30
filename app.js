@@ -2,7 +2,9 @@ const STORAGE_KEY = "site-camp-site-packed-v1";
 const CUSTOM_ITEMS_KEY = "site-camp-site-custom-items-v1";
 const DELETED_ITEMS_KEY = "site-camp-site-deleted-items-v1";
 const DETAILS_KEY = "site-camp-site-details-v1";
+const DATA_FILES = { camping: "Data/camping_supplies.json", meals: "Data/meals.json", everything: "Data/everything_else.json" };
 const tabLabels = { camping: "Camping supplies", meals: "Meals", everything: "Everything else" };
+let checklistItems = [];
 const state = { tab: "camping", status: "all", category: "all", search: "", packed: loadPacked(), customItems: loadCustomItems(), deleted: loadDeletedItems() };
 
 const panel = document.querySelector("#checklist-panel");
@@ -118,9 +120,32 @@ addItemForm.addEventListener("submit", event => {
   render();
   newItemInput.focus();
 });
-detailsInput.value = localStorage.getItem(DETAILS_KEY) || "";
 detailsInput.addEventListener("input", event => localStorage.setItem(DETAILS_KEY, event.target.value));
 document.querySelector("#clear-packed").addEventListener("click", () => { if (!state.packed.size || window.confirm("Clear all packed items on this device?")) { state.packed.clear(); savePacked(); render(); } });
 
-populateCategoryFilter();
-render();
+async function loadData() {
+  const [campingResponse, mealsResponse, detailsResponse] = await Promise.all([
+    fetch(DATA_FILES.camping),
+    fetch(DATA_FILES.meals),
+    fetch(DATA_FILES.everything)
+  ]);
+  if (!campingResponse.ok || !mealsResponse.ok || !detailsResponse.ok) throw new Error("Unable to load checklist data.");
+  const [campingItems, mealItems, details] = await Promise.all([campingResponse.json(), mealsResponse.json(), detailsResponse.json()]);
+  checklistItems = campingItems.concat(mealItems);
+  const savedDetails = localStorage.getItem(DETAILS_KEY);
+  detailsInput.value = savedDetails !== null ? savedDetails : (details.details || "");
+}
+
+async function init() {
+  try {
+    await loadData();
+    populateCategoryFilter();
+    render();
+  } catch (error) {
+    panel.innerHTML = `<p class="empty-state">Checklist data could not be loaded. Please refresh the page.</p>`;
+    detailsInput.value = localStorage.getItem(DETAILS_KEY) || "";
+    console.error(error);
+  }
+}
+
+init();
